@@ -74,7 +74,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: top;
+  justify-content: flex-start;
 }
 
 .project-nav a {
