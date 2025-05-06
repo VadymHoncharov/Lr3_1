@@ -3,11 +3,17 @@ body {
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh;
 }
+
+/* Центруємо лише контент */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Мінус висота меню, щоб не виходило за екран */
+}
+
 
 .login-box {
     background: white;
@@ -74,7 +80,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .project-nav a {
@@ -91,4 +97,3 @@ button:hover {
 .project-nav a:hover {
   background: #1976d2;
 }
-
